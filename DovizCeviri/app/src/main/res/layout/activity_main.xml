@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="124dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doviz" />
+
+    <TextView
+        android:id="@+id/cadTxt"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:text="CAD: "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/chftxt"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="22dp"
+        android:text="CHF: "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadTxt" />
+
+    <TextView
+        android:id="@+id/usdTxt"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="22dp"
+        android:text="USD: "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chftxt" />
+
+    <TextView
+        android:id="@+id/jpyTxt"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="22dp"
+        android:text="JPY: "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usdTxt" />
+
+    <TextView
+        android:id="@+id/tryTxt"
+        android:layout_width="252dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="22dp"
+        android:text="TRY: "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jpyTxt" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginTop="25dp"
+        android:onClick="getir"
+        android:text="GETİR"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tryTxt" />
+</android.support.constraint.ConstraintLayout>
